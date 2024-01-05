@@ -1,0 +1,36 @@
+
+/* ***** Clase 1 ***** */
+#ExternoTitulo {
+    color:crimson;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ExternoParrafo {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    background-color: aquamarine;
+}
+
+#AlgunasPropiedades {
+    margin: 150px;
+    border: 3px solid black;
+    padding: 60px;    
+}
+.AlgunasPropiedades {
+    text-align: center;
+}    
+
+/* ***** Clase 2 ***** */
+#Clase2 {
+    background: greenyellow;
+}
+
+body {
+    background-color: aqua;
+    background-image: url("/img/Saturno.jpg");   
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed; /*Imagen fija*/
+    background-size: cover;
+}

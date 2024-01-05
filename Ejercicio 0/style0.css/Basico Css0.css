@@ -1,0 +1,97 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+#EjemploSimple {            /*Seleccion por Id*/
+    border: 2px solid blue; 
+    margin: 40px; 
+    padding: 30px;  
+}
+
+.EjemploSimple {            /*Seleccion por Clase*/
+    text-align: center;
+    background-color: rgb(48, 219, 219);
+}
+
+#EjemploSimple ol li p {     /*Seleccion hasta llegar al Elemento*/
+    color: tomato; 
+}
+
+#EjemploSimple ol li h4 {   /*Seleccion hasta llegar al Elemento*/
+    color: green;
+
+}
+
+.prueba1 {
+    color: darkorchid;
+    font-size: 25px;
+}
+
+.prueba2 {
+    text-align: right;
+    font-size: 30px;
+    
+}
+
+/* Agrupacion de selectores
+
+h1 {
+    color: red;
+    text-align: center;
+}
+h2 {
+    color: red;
+    text-align: center;
+}
+p {
+    color: red;
+    text-align: center;
+}
+
+Se puede remplazar por :
+
+h1, h2, p {
+    color: red;
+    text-align: center;
+}
+
+*/
+
+/*Opacidad y transparencia*/
+
+.default {
+    background-color: blue;
+    font-size: 30px;
+}
+.opacity7 {
+    background-color: blue;
+    opacity: 0.7;
+    font-size: 30px;
+}
+.opacity5 {
+    background-color: blue;
+    opacity: 0.5;
+    font-size: 30px;
+}
+.opacity3 {
+    background-color: blue;
+    opacity: 0.3;
+    font-size: 30px;
+}
+.opacity1 {
+    background-color: blue;
+    opacity: 0.1;
+    font-size: 30px;
+}
+
+/*Imagen de fondo*/
+
+h3 {
+    color: rgba(red, green, blue, 50%)
+}
+
+body {
+    background-image: url("img/Saturno.jpg");
+}

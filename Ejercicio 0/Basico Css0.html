@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style0.css/Basico Css0.css">
+    <title>Basico Css</title>
+</head>
+
+<body>
+    
+    <div id="Clase1">
+        <div>
+            <h1>Clase 1</h1>
+            <p class="intro">Css es el lenguaje utilizado para diseñar un documento Html, describe como mostrar los elementos <br>
+            Cascading Style Sheets puede controlar el diseño de varias paginas web sin interferir los estilos de otras paginas web. <br>
+            </p>
+        </div>        
+
+        <div id="Sintaxis">
+            <h2>Sintaxis Css</h2>
+            <img src="img/sintaxis.png" alt="">
+
+            <h3>Selectores</h3>
+            <ol>
+                <li>Selectores simples (seleccione elementos según el nombre, la identificación, la clase)</li>
+                <li>Selectores del combinador (seleccione elementos basados en una relación específica entre ellos)</li>
+                <li>Selectores de pseudoclase (seleccionar elementos en función de un estado determinado)</li>
+                <li>Selectores de pseudoelementos (select y aplicar estilo a una parte de un elemento)</li>
+                <li>Selectores de atributos (seleccionar elementos en función de un atributo o valor de atributo)</li>
+            </ol>
+
+            <div id="EjemploSimple">
+                <h3 class="EjemploSimple">Selector Simple</h3>
+
+                <ol>
+                    <li>Selectores simples (seleccione elementos según el nombre, la identificación, la clase)</li>
+                    <ol>
+                        <li><p>Selector Simple</p></li>
+                        <li><h4>Selector Simple</h4></li>
+                    </ol>
+                </ol>
+
+                <p class="prueba1">Parrafo nuevo de prueba 1.</p>
+                <p class="prueba2">Parrafo nuevo de prueba 2.</p>
+                <p class="prueba1 prueba2">Parrafo nuevo de prueba 3.</p>
+
+                <h3>Agrupacion de Selectores</h3>
+                <p>se usa cuando mas de un elemento tiene los mismos estilos definidos, esto ayuda a reducir el codigo. <br>
+                h1, h2, p 
+                </p>
+
+            </div>
+        </div>
+
+        <div id="Fondos">
+            <h2>Fondos</h2>
+            <p>Son usados para agregar efectos de fondo para los elementos.</p>
+            <ol>
+                <li>background</li>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ol>
+            <h3>Opacidad Transparencia</h3>
+            <p><mark>opacity</mark> Esta propiedad especifica la opacidad/transparencia de un elemento, en un rango de 0.0 hasta 1.0 <br>
+            si el valor es menor este sera mas transparente. </p>
+
+            <div>
+                <div class="default">
+                    <h4>opacity 1 (Default)</h4>
+                </div>
+                <div class="opacity7">
+                    <h4>opacity 0.7</h4>
+                </div>
+                <div class="opacity5">
+                    <h4>opacity 0.5</h4>
+                </div>
+                <div class="opacity3">
+                    <h4>opacity 0.3</h4>
+                </div>
+                <div class="opacity1">
+                    <h4>opacity 0.1</h4>
+                </div>
+
+            </div>
+            <div class="imagenFondo">
+                <h3>Imagen como fondo</h3>
+                <p>El fondo para este texto tiene una imagen</p>            
+            </div>          
+            
+        </div>
+    </div>
+    
+</body>
+</html>
