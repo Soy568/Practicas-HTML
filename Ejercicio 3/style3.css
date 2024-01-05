@@ -1,0 +1,21 @@
+body {
+    background-color: greenyellow;
+}
+img {
+    width: 50%;     /*Tamaño de la imagen*/
+}
+
+.Cohete {
+    float: left;
+    width: 50px;
+}
+.Goku {
+    float: right;
+    width: 50px;
+}
+.Texto-Izq {
+    text-align: left;
+}
+.Texto-Der {
+    text-align: right;
+}
