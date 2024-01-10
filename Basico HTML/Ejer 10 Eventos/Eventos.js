@@ -19,3 +19,9 @@ elemento.onmouseout = function() {
     elemento.style.backgroundColor = "white";   //Retiro el mouse
 };
 
+/*Trabajando con Keydown */
+document.onkeydown = function(evento) {
+    if(evento.key === "Enter"){
+        console.log("Se presiono la tecla Enter");
+    };
+};
