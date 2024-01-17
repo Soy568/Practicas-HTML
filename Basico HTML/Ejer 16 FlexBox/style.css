@@ -1,16 +1,17 @@
 body {
-    background-image: url(img/verde.jpg);
-    
+    background-image: url(img/R.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
+/* Principal*/
 
 .flex-container {
-    display:flex;                                   /* Disposicion de los elementos Horizontalmente*/
+    display:flex;                                    /* Disposicion de los elementos */
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/
     padding: 20px;                                   /* separacion del borde y los elementos*/
 }
-
 .Box {
     border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
     background-color: greenyellow;                 /* Color de fondo*/
@@ -25,7 +26,71 @@ body {
 }
 
 /*Usando justify-content*/
-
-.flex-container1 {
-    
+.flex-container1 {    
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    padding: 20px;                                   /* Separacion entre elemento y su borde */
+    display:flex;                                    /* Disposicion de los elementos */
+    justify-content: flex-start;                     /* Alinea los elementos al lado IZQUIERDO del contenedor*/
+    justify-content: flex-end;                       /* Alinea los elementos al lado DERECHO del contenedor*/
+    justify-content: center;                         /* Alinea los elementos en el CENTRO del contenedor*/
+    justify-content: space-between;                  /* Muestra los elementos con la misma distancia ENTRE ellos*/
+    justify-content: space-around;                   /* Muestra los elementos con la misma separacion ALREDEDOR de ellos*/
+    justify-content: space-evenly;                   /* Los elementos se distribuyen UNIFORMEMENTE dentro del contenedor*/
 }
+.Box1 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
+
+}
+
+/* Usando align-items*/
+.flex-container2 {
+    display:flex;                                    /* Disposicion de los elementos */
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    padding: 20px;                                   /* separacion del borde y los elementos*/
+}
+.Box2 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
+}
+
+/* Usando flex-direction*/
+.flex-container3 {
+    border: 2px solid red;
+    background-color: gray;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;                            /* Los elementos son colocados en la misma direccion del texto*/
+    flex-direction: row-reverse;                    /* Los elementos son colocados en direccion opueta al texto*/
+    flex-direction: column;                         /* Los elementos son colocados verticalmente de arriba hacia abajo*/
+    flex-direction: column-reverse;                 /* Los elementos son colocados verticalmente de abajo hacia arriba*/ 
+}
+.Box3 {
+    border: 2px solid red;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: blue;
+    color: white;
+    margin: 5px;
+}
+/**/
