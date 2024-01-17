@@ -169,11 +169,14 @@ flex-grow: 3;                       /*Ajusta el Ancho con prioridad de los otros
 
 /* Usando align-self*/
 
-.flex-container5 {
-    display:flex;                                    /* Disposicion de los elementos */
+.flex-container5 {    
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/
+    width: 50%;
+    height: 500px;
     padding: 20px;                                   /* separacion del borde y los elementos*/
+    display:flex;                                    /* Disposicion de los elementos */
+    align-items: flex-start;
 }
 .Box5-21 {
     border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
@@ -230,8 +233,71 @@ flex-grow: 3;                       /*Ajusta el Ancho con prioridad de los otros
     font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
     font-weight: bold;                               /* Grosor del Texto*/
     width: 120px;                                    /* Ancho de la Box por defecto*/    
-    height: 120px;                                   /* Alto de la Box por defecto*/
+    /*height: 120px;                                   /* Alto de la Box por defecto*/
     line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
     text-align: center;                              /* Texto alineado al centro*/
     margin: 5px;                                     /* Margen a los 4 lados de la Box*/
+}
+.Box5-21 {
+    align-self: flex-start;
+}
+.Box5-22 {
+    align-self: flex-end;
+}
+.Box5-23 {
+    align-self: center;
+}
+.Box5-24 {
+    align-self: baseline;
+}
+.Box5-25 {
+    align-self: stretch;                            /* Anulo height para dar el efecto*/
+}
+
+/* Usando flex-wrap*/
+.flex-container6 {
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    width: 50%;
+    height: 500px;
+    padding: 20px;                                   /* separacion del borde y los elementos*/
+    display:flex;                                    /* Disposicion de los elementos */
+    flex-wrap: nowrap;                               /* Los elementos se ajusta en una sola linea*/
+    flex-wrap: wrap;                                 /* Los elementos se envuleven alrededor de lineas ADICIONALES*/
+    flex-wrap: wrap-reverse;                         /* Los elementos se envuelven alrededor d elineas ADICIONALES EN REVERSA*/
+}
+.Box6 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
+}
+
+/* Usando flex-flow*/
+.flex-container7 {
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    width: 50%;
+    height: 500px;
+    padding: 20px;                                   /* separacion del borde y los elementos*/
+    display:flex;                                    /* Disposicion de los elementos */
+    flex-flow: row wrap;
+}
+.Box7 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
 }
