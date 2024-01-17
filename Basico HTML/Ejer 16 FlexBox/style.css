@@ -301,3 +301,32 @@ flex-grow: 3;                       /*Ajusta el Ancho con prioridad de los otros
     text-align: center;                              /* Texto alineado al centro*/
     margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
 }
+
+/* Usando align-content*/
+.flex-container8 {
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    width: 50%;
+    height: 500px;
+    padding: 20px;                                   /* separacion del borde y los elementos*/
+    display:flex;                                    /* Disposicion de los elementos */
+    flex-wrap: wrap;
+    align-content: flex-start;                       /* las lineas se posicionan en la parte SUPERIOR del contenedor*/
+    align-content: flex-end;                         /* Las lineas se posicionan en la parte INFERIOR del contenedor*/
+    align-content: center;                           /* Las lineas se posicionan en la parte CENTRAL VERTICAL del contenedor*/
+    align-content: space-between;                    /* Las lineas se muestran con la MISMA DISTANCIA entre ellas*/
+    align-content: space-around;                     /* Las lineas se muestran con la misma SEPARACION ALREDEDOR de ellas*/
+    align-content: stretch;                          /* Las lineas se ESTIRAN para ajustarse al contenedor*/
+}
+.Box8 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
+}
