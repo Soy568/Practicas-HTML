@@ -53,13 +53,129 @@ body {
 }
 
 /* Usando align-items*/
-.flex-container2 {
+.flex-container2 {    
+    border: 1px solid blue;                        /* Border solido para el contenedor*/
+    background-color: grey;                        /* Color de fondo*/
+    padding: 20px; 
+    width: 50%;
+    height: 500px;                                   /* Altura por defecto del contenedor*/    
+    display:flex;                                    /* Disposicion de los elementos */
+    align-items: flex-start;                         /* Alinea elementos en la parte SUPERIOR del contenedor*/
+    align-items: end;                                /* Alinea elementos en la parte INFERIOR del contenedor*/      
+    align-items: center;                             /* Alinea elementos en la parte CENTRAL del contenedor*/
+    align-items: baseline;                           /* Muetra elementos en la linea BASE del contenedor*/
+    align-items: stretch;                            /* Los elemnetos se ESTIRAN para ajustarse al contenedor*/   
+}
+.Box2 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 60px;                                    /* Ancho de la Box por defecto*/    
+    height: 60px;                                   /* Alto de la Box por defecto*/
+    line-height: 60px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
+}
+
+/* Usando flex-direction*/
+.flex-container3 {
+    
+    flex-direction: row;                            /* Los elementos son colocados en la MISMA direccion del texto*/
+    flex-direction: row-reverse;                    /* Los elementos son colocados en direccion OPUESTA al texto*/
+    flex-direction: column;                         /* Los elementos son colocados verticalmente de ARRIBA hacia abajo*/
+    flex-direction: column-reverse;                 /* Los elementos son colocados verticalmente de Abajo hacia arriba*/ 
+}
+.Box3 {
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 60px;
+    background-color: blue;
+    color: white;
+    margin: 5px;
+}
+
+/* Usando Order*/
+.flex-container4 {
+    border: 2px solid red;
+    background-color: gray;
+    padding: 25px;
+    width: 50%;
+    height: 200px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.Box4-17 {
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: yellow;
+    color: black;
+    margin: 5px;
+}
+.Box4-18 {
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(129, 129, 230);
+    color: black;
+    margin: 5px;
+}
+.Box4-19 {
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: greenyellow;
+    color: black;
+    margin: 5px;
+}
+.Box4-20 {
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
+.Box4-17 {
+    order: 4;
+    flex-grow: 4;                   /*Ajusta el Ancho con prioridad de los otros elementos*/
+    flex-basis: 40%;                /* Especifica la base flexible */
+}
+.Box4-18 {
+    order: 2;
+    flex-grow: 2;                   /*Ajusta el Ancho con prioridad de los otros elementos*/
+}
+.Box4-19 {
+    order: 3;
+flex-grow: 3;                       /*Ajusta el Ancho con prioridad de los otros elementos*/
+}
+.Box4-20 {
+    order: 1;
+    flex-grow: 1;                   /*Ajusta el Ancho con prioridad de los otros elementos*/
+}
+
+/* Usando align-self*/
+
+.flex-container5 {
     display:flex;                                    /* Disposicion de los elementos */
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/
     padding: 20px;                                   /* separacion del borde y los elementos*/
 }
-.Box2 {
+.Box5-21 {
     border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
     background-color: greenyellow;                 /* Color de fondo*/
     color: red;                                    /* Color del Texto*/
@@ -71,26 +187,51 @@ body {
     text-align: center;                              /* Texto alineado al centro*/
     margin: 5px;                                     /* Margen a los 4 lados de la Box*/ 
 }
-
-/* Usando flex-direction*/
-.flex-container3 {
-    border: 2px solid red;
-    background-color: gray;
-    padding: 25px;
-    display: flex;
-    flex-direction: row;                            /* Los elementos son colocados en la misma direccion del texto*/
-    flex-direction: row-reverse;                    /* Los elementos son colocados en direccion opueta al texto*/
-    flex-direction: column;                         /* Los elementos son colocados verticalmente de arriba hacia abajo*/
-    flex-direction: column-reverse;                 /* Los elementos son colocados verticalmente de abajo hacia arriba*/ 
+.Box5-22 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/
 }
-.Box3 {
-    border: 2px solid red;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    background-color: blue;
-    color: white;
-    margin: 5px;
+.Box5-23 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/
 }
-/**/
+.Box5-24 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/
+}
+.Box5-25 {
+    border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
+    background-color: greenyellow;                 /* Color de fondo*/
+    color: red;                                    /* Color del Texto*/
+    font-family: 'Courier New', Courier, monospace;  /* Tipo de Familia del texto*/
+    font-weight: bold;                               /* Grosor del Texto*/
+    width: 120px;                                    /* Ancho de la Box por defecto*/    
+    height: 120px;                                   /* Alto de la Box por defecto*/
+    line-height: 120px;                              /* Altura o distancia a la linea de Texto*/
+    text-align: center;                              /* Texto alineado al centro*/
+    margin: 5px;                                     /* Margen a los 4 lados de la Box*/
+}
