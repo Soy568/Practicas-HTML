@@ -7,19 +7,55 @@
     <title>Eventos</title>
 </head>
 <body>
+
+    <section>
+        <h1>Eventos</h1>
+        <p>Los eventos son cosas que le suceden a los elementos, y JavaScript reacciona a estos. <br>
+        JavaScript permite ejecutar codigo al detectar un evento. <br>
+        HTML permite agregar atributos de control de eventos.</p>
+    </section>
+    <section>
+        <h2>Eventos comunes DOM Events 85</h2>
+        <ul>
+            <li>onclick  : se hace clic en un elemento.</li>
+            <li>onchange : se ha cambiado un elemento.</li>
+            <li>onmouseover : se mueve el mouse sobre un elemento.</li>
+            <li>onmouseout : se aleja el mouse de un elemento.</li>
+            <li>onkeydown : se presiona una tecla.</li>
+            <li>onload : el navegador a terminado de cargar la pagina.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Atributo onclick </h2>
+        <p>Al dar click sobre un boton se ejecuta una accion. " Usando metodo .getElementById() "</p>
+        <button type="button" onclick="displayDate()">Doy Hora y Fecha</button>
+        <p id="horaFecha"></p>
+    </section>
+   
     
-    <div id="Box">
-        <p>Cambia el color de fondo del elemento al hacer clic en el boton.</p>
-        <button id="Boton">Cambiar Color</button>
-    </div>
 
-    <div id="miElemento">
-        <p>Cambia el color de fondo al mover el mouse sobre el elemento.</p>        
-    </div>
-
-    <div>
-        <p>Al presionar la tecla "Enter", mostrara un mensaje en consola.</p>
-    </div>
+    <section>
+        <div id="Box">
+            <p>Cambia el color de fondo del elemento al hacer clic en el boton.</p>
+            <button id="Boton">Cambiar Color</button>
+        </div>
+    
+        <div id="miElemento">
+            <p>Cambia el color de fondo al mover el mouse sobre el elemento.</p>        
+        </div>
+    
+        <div>
+            <p>Al presionar la tecla "Enter", mostrara un mensaje en consola.</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Cambio de atributo de una imagen</h2>
+        <button type="button" onclick="document.getElementById('myImage').src='img/Bombillo On.png'">turn on the light</button>
+        <img id="myImage" src="img/Bombillo Off.png" alt="" style="width: 100px;">
+        <button type="button" onclick="document.getElementById('myImage').src='img/Bombillo Off.png'">turn off the light</button>
+    </section>
 
 
 

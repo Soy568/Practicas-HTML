@@ -27,10 +27,33 @@
 }
 
 body {
-    background-color: aqua;
+    background-color:grey;
     background-image: url("/img/Saturno.jpg");   
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed; /*Imagen fija*/
     background-size: cover;
+}
+
+/* ***** Enlaces con colores ***** */
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
 }

@@ -1,0 +1,6 @@
+function izquierda(){
+    
+};
+function derecha() {
+
+};

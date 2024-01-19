@@ -6,11 +6,11 @@ body {
 }
 /* Principal*/
 
-.flex-container {
-    display:flex;                                    /* Disposicion de los elementos */
+.flex-container {    
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/
     padding: 20px;                                   /* separacion del borde y los elementos*/
+    display:flex;                                    /* Disposicion de los elementos */
 }
 .Box {
     border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
@@ -25,7 +25,7 @@ body {
     margin: 5px;                                     /* Margen a los 4 lados de la Box*/   
 }
 
-/*Usando justify-content*/
+/* Usando justify-content*/
 .flex-container1 {    
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/

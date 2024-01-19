@@ -18,7 +18,15 @@
 
     <h2>Usando Justify-content</h2>
     <p>Alinea los elementos Horizontalmente.</p>
-    <section class="flex-container1">
+    <div>
+        <input type="button" value="flex-start" onclick="izquierda()"></input>
+        <input type="button" value="flex-end" onclick="derecha()"></input>
+        <input type="button" value="center" onclick="centro()"></input>
+        <input type="button" value="space-between" onclick="entre()"></input>
+        <input type="button" value="space-around" onclick="alrededor()"></input>
+        <input type="button" value="space-evenly" onclick="uniformemente()"></input>
+    </div>
+    <section class="flex-container1">        
         <div class="Box1"> Box 5 </div>
         <div class="Box1"> Box 6 </div>
         <div class="Box1"> Box 7 </div>
@@ -139,6 +147,6 @@
         <div class="Box8">Box 80</div>
         
     </section>
-    
+    <script src="flexbox.js"></script>
 </body>
 </html>

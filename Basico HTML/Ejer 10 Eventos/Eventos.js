@@ -1,10 +1,21 @@
+function displayDate() {
+    document.getElementById("horaFecha").innerHTML=Date(); 
+};
+
+
+
+
+
+
+
 /* Trabajando con dar clic */
 
 var Box = document.getElementById("Box");
 var Boton = document.getElementById("Boton");
 
 Boton.onclick = function() {
-    Box.style.backgroundColor = "red";
+    Box.style.backgroundColor = "black";
+    Box.style.color="white";
 };
 
 
@@ -19,7 +30,7 @@ elemento.onmouseout = function() {
     elemento.style.backgroundColor = "white";   //Retiro el mouse
 };
 
-/*Trabajando con Keydown */
+/* Trabajando con Keydown */
 document.onkeydown = function(evento) {
     if(evento.key === "Enter"){
         console.log("Se presiono la tecla Enter");
