@@ -30,13 +30,15 @@ body {
     border: 1px solid blue;                        /* Border solido para el contenedor*/
     background-color: grey;                        /* Color de fondo*/
     padding: 20px;                                   /* Separacion entre elemento y su borde */
-    display:flex;                                    /* Disposicion de los elementos */
-    justify-content: flex-start;                     /* Alinea los elementos al lado IZQUIERDO del contenedor*/
-    justify-content: flex-end;                       /* Alinea los elementos al lado DERECHO del contenedor*/
-    justify-content: center;                         /* Alinea los elementos en el CENTRO del contenedor*/
-    justify-content: space-between;                  /* Muestra los elementos con la misma distancia ENTRE ellos*/
-    justify-content: space-around;                   /* Muestra los elementos con la misma separacion ALREDEDOR de ellos*/
-    justify-content: space-evenly;                   /* Los elementos se distribuyen UNIFORMEMENTE dentro del contenedor*/
+    
+    /*   display:flex;                                    /* Disposicion de los elementos */
+    /*   justify-content: flex-start;                     /* Alinea los elementos al lado IZQUIERDO del contenedor*/
+    /*   justify-content: flex-end;                       /* Alinea los elementos al lado DERECHO del contenedor*/
+    /*   justify-content: center;                         /* Alinea los elementos en el CENTRO del contenedor*/
+    /*   justify-content: space-between;                  /* Muestra los elementos con la misma distancia ENTRE ellos*/
+    /*   justify-content: space-around;                   /* Muestra los elementos con la misma separacion ALREDEDOR de ellos*/
+    /*   justify-content: space-evenly;                   /* Los elementos se distribuyen UNIFORMEMENTE dentro del contenedor*/
+    
 }
 .Box1 {
     border: 1px solid blue;                        /* Borde solido de 1px para cada elemento*/
