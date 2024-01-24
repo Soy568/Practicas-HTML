@@ -49,6 +49,15 @@ amigos.splice(1,2,'Carlos','Laura','Diana');    //permite insertar elementos don
         //         ^--- Elementos a insertar.
 console.log(amigos);
 
+const carros = ['Honda','Ferrary','Mazda','Chevrolete'];
+console.log(carros);
+carros.splice(2,0,'Toyota','Ford','Alpine','Jaguar','Cupra','Volkswagen','Porsche');
+console.log(carros);
+
+const carrosFavoritos = carros.slice(3,7);      //Permite copiar elementos de un arreglo a otro arreglo.
+                               //    ^-------- Se inicia desde este elemento.
+                               //      ^------ Hasta ANTES de esteelemento a copiar.
+console.log(carrosFavoritos);
 
 
 
