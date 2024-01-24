@@ -82,3 +82,12 @@ console.log('Todos los nombres son Validos ? : '+nombresValidos);
 /* ********** .some() ********** */
 /**permite ejecutar un concicional sobre cada elemento
  * y nos devuelve true si ALGUN elemento cumplio la condicion */
+
+const nombresValidos2 = nombres.some((nombre)=>{
+    if(typeof nombre !== 'string'){     //si el tipo de nombre es string
+        return true;
+    } else {
+        return false;
+    };
+});
+console.log('El arreglo es invalido ? : '+nombresValidos2);
