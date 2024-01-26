@@ -18,12 +18,13 @@ console.log(primerIndex2);
 const index= texto.indexOf('s');    //identifico el index DESDE donde se desea cortar
 const indexEnd = texto.lastIndexOf('y');    //identifico el index HASTA donde se desea cortar
 /** TENER EN CUENTA LAS LETRAS REPETIDAS. */
+/** lastIndexOf +1 */
 const recorte = texto.slice(index,indexEnd); //incluyo el 1er parametro (index) para hacer el recorte
 console.log(recorte);
 
 
 /** .replace() */
-/** Devuelve una cadena de texto en donde remplaza una valor por otro. */
+/** Devuelve una cadena de texto en donde remplaza un valor por otro. */
 /** 1er parametro : El texto a remplazar */
 /** 2do parametro : El texto NUEVO */
 
@@ -40,9 +41,13 @@ console.log(texto.split(' '));
 
 /** .toUpperCase */
 /** texto en mayuscula */
+const mayusculas = texto.toUpperCase();
+console.log(mayusculas);
 
 /** .toLowerCase */
 /** texto en minusculas */
+const minusculas = texto.toLowerCase();
+console.log(minusculas);
 
 
 
