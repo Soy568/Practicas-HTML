@@ -50,8 +50,10 @@ const [primera,segunda,tercera] = frutas;   //destructuracion de frutas
 
 console.log(segunda); //muestra el valor que contiene la variable.
 
+
 const {nombre,correo} = usuario;        //destructuracion de usuario.
 console.log(nombre,correo);
+
 
 const mostrarEdad = (nombre, edad)=>{           //destructuracion de una funcion
     console.log(`${nombre} tiene ${edad} años`);
